@@ -1,0 +1,262 @@
+{
+   "accessors" : [
+      {
+         "bufferView" : 0,
+         "componentType" : 5126,
+         "count" : 406,
+         "type" : "VEC2"
+      },
+      {
+         "bufferView" : 1,
+         "componentType" : 5126,
+         "count" : 406,
+         "type" : "VEC3"
+      },
+      {
+         "bufferView" : 2,
+         "componentType" : 5126,
+         "count" : 406,
+         "type" : "VEC4"
+      },
+      {
+         "bufferView" : 3,
+         "componentType" : 5126,
+         "count" : 406,
+         "max" : [ 0.02128091, 0.06284806, 0.0138090011 ],
+         "min" : [ -0.02128091, -4.773855e-05, -0.013809 ],
+         "type" : "VEC3"
+      },
+      {
+         "bufferView" : 4,
+         "componentType" : 5123,
+         "count" : 2046,
+         "type" : "SCALAR"
+      }
+   ],
+   "asset" : {
+      "extras" : {
+         "GOOGLE_processor_version" : 294144208
+      },
+      "generator" : "glTF Tools for Unity",
+      "version" : "2.0"
+   },
+   "bufferViews" : [
+      {
+         "buffer" : 0,
+         "byteLength" : 3248
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 4872,
+         "byteOffset" : 3248
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 6496,
+         "byteOffset" : 8120
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 4872,
+         "byteOffset" : 14616
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 4092,
+         "byteOffset" : 19488
+      }
+   ],
+   "buffers" : [
+      {
+         "byteLength" : 23580,
+         "uri" : "Avocado.bin"
+      }
+   ],
+   "cameras" : [
+      {
+         "perspective" : {
+            "yfov" : 0.7853981633974483,
+            "znear" : 0.1000000014901161
+         },
+         "type" : "perspective"
+      }
+   ],
+   "extensions" : {
+      "KHR_lights_punctual" : {
+         "lights" : [
+            {
+               "color" : [ 1, 0.9333333333333333, 0.8666666666666667 ],
+               "intensity" : 0.25,
+               "name" : "headLight",
+               "type" : "directional"
+            },
+            {
+               "color" : [ 1, 0.9333333333333333, 0.8666666666666667 ],
+               "intensity" : 0.324999988079071,
+               "name" : "keyLight",
+               "type" : "directional"
+            }
+         ]
+      }
+   },
+   "extensionsUsed" : [ "GOOGLE_backgrounds", "GOOGLE_camera_settings", "KHR_lights_punctual" ],
+   "extras" : {
+      "GOOGLE_initial_camera_motion" : {
+         "motionPath" : "FULL_ROTATION"
+      },
+      "GOOGLE_lighting_rig" : {
+         "disableShadows" : false
+      }
+   },
+   "images" : [
+      {
+         "uri" : "Avocado_baseColor.png"
+      },
+      {
+         "uri" : "Avocado_roughnessMetallic.png"
+      },
+      {
+         "uri" : "Avocado_normal.png"
+      },
+      {
+         "uri" : "DuckCM.png"
+      }
+   ],
+   "materials" : [
+      {
+         "name" : "2256_Avocado_d",
+         "normalTexture" : {
+            "index" : 2
+         },
+         "pbrMetallicRoughness" : {
+            "baseColorTexture" : {
+               "index" : 0
+            },
+            "metallicRoughnessTexture" : {
+               "index" : 1
+            }
+         }
+      }
+   ],
+   "meshes" : [
+      {
+         "name" : "Avocado",
+         "primitives" : [
+            {
+               "attributes" : {
+                  "NORMAL" : 1,
+                  "POSITION" : 3,
+                  "TANGENT" : 2,
+                  "TEXCOORD_0" : 0
+               },
+               "indices" : 4,
+               "material" : 0
+            }
+         ]
+      }
+   ],
+   "nodes" : [
+      {
+         "mesh" : 0,
+         "name" : "Avocado",
+         "rotation" : [ 0, 1, 0, 0 ]
+      },
+      {
+         "children" : [ 2 ]
+      },
+      {
+         "children" : [ 3 ],
+         "extras" : {
+            "isTransformNode" : 1
+         },
+         "translation" : [ 0.0007444640444099982, 0.02752504420452792, 0.0001187694214836694 ]
+      },
+      {
+         "children" : [ 0 ],
+         "translation" : [ -0.0007444640444099982, -0.02752504420452792, -0.0001187694214836694 ]
+      },
+      {
+         "camera" : 0,
+         "children" : [ 5 ],
+         "rotation" : [
+            -0.2525911343157678,
+            -0.3977605270221446,
+            -0.1148867691162642,
+            0.8745200468200633
+         ],
+         "translation" : [ -0.05807547233181277, 0.09394757031032097, 0.06921360405111941 ]
+      },
+      {
+         "extensions" : {
+            "KHR_lights_punctual" : {
+               "light" : 0
+            }
+         },
+         "extras" : {
+            "isHeadLight" : 1
+         },
+         "name" : "headLightNode",
+         "translation" : [ -0.03566844433921795, 0.01783422216960897, 0.01783422216960897 ]
+      },
+      {
+         "extensions" : {
+            "KHR_lights_punctual" : {
+               "light" : 1
+            }
+         },
+         "extras" : {
+            "isKeyLight" : 1
+         },
+         "name" : "keyLightNode",
+         "rotation" : [ -0.7505326882858236, -0.3752663441429118, 0, 0.5439447166468927 ],
+         "scale" : [ 0, 0, 0.03602512878261013 ],
+         "translation" : [ -0.0349104910988521, 0.1040366249995889, -0.03185145239241734 ]
+      }
+   ],
+   "scene" : 0,
+   "scenes" : [
+      {
+         "extensions" : {
+            "GOOGLE_backgrounds" : {
+               "backgroundImage" : {
+                  "index" : 3
+               },
+               "color" : [ 0.3058823529411765, 0.203921568627451, 0.1803921568627451 ]
+            },
+            "GOOGLE_camera_settings" : {
+               "mode" : "movableOrbit",
+               "pivot" : [ 0.01291959375130345, 0.03458424834592355, 0.007313840494030776 ]
+            }
+         },
+         "extras" : {
+            "GOOGLE_camera_index" : {
+               "cameraIndex" : 0,
+               "nodeIndex" : 4
+            },
+            "GOOGLE_geometry_data" : {
+               "stats" : {
+                  "centroid" : [ 0.001114637683758029, 0.03198636743436867, 0.004173676390192789 ],
+                  "radius" : 0.03566844433921795,
+                  "stdev" : 0.02305861357742637
+               },
+               "visualCenterPoint" : [ 0.0007444640444099982, 0.02752504420452792, 0.0001187694214836694 ]
+            },
+            "GOOGLE_hemi_light" : {
+               "groundColor" : [ 0.3058823529411765, 0.203921568627451, 0.1803921568627451 ]
+            }
+         },
+         "nodes" : [ 1, 4, 6 ]
+      }
+   ],
+   "textures" : [
+      {
+         "source" : 0
+      },
+      {
+         "source" : 1
+      },
+      {
+         "source" : 2
+      }
+   ]
+}
